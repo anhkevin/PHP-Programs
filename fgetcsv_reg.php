@@ -34,6 +34,7 @@ function fgetcsv_reg(&$handle,$length=NULL,$d=',',$e='"'){
 }
 
 // get csv result
+$file_name = '../file.csv;
 if (false !== $handle = fopen($file_name, 'r')) {
     $data = array();
     while(($line = $this->fgetcsv_reg($handle)) !== false) {
